@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-user{/*--------*/
+
+
+ 
+}
+
+.form-user{
+  margin-top: 30%;
+  width: 360px;
+  height: 450px;
+  text-align: center;
+  border-radius: 20px;
+
+}
+
+.imgUser{  /*------------*/
+  width: 100px;
+  }
+.img-characters{
+  align-items: center;
+  width: 350px;
+ 
+}
+
+.pokeball-inputUser{
+  opacity: 60%;
+  width: 350px;
+  position: absolute;
+  z-index: -1;
+  margin-top: -25rem;
+    border-radius: 50%;
+  box-shadow: 10px 10px 20px 10px rgb(80, 78, 78);
+  
+}
+#transicion{
+  animation:  move 8s infinite;
+  animation-delay: 1000ms;
+}
+
+@keyframes move{
+0%{
+
+}
+25%{
+  
+  width: 150px;
+}
+50%{
+  
+  width: 300px;
+}
+25%{
+  
+  width: 200px;
+transform: translateY(2px);
+
+}
+}
+
+.mew-inputUser{
+ position: absolute;
+  margin-left: 2rem;
+  width: 150px;
+  margin-top: -3.5rem;
+}
+
+
+
+
+
+.mewtwo-inputUser{
+
+  position: absolute;
+  margin-left: 8rem;
+  margin-top: -40rem;
+  width: 220px;
+}
