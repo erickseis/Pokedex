@@ -19,7 +19,15 @@
   opacity: 60%;
   width: 100vw;
   height: 50px;
+  display: flex;
+  justify-content: center;
 }
+#poke{
+  min-height: 100px;
+  
+}
+
+
 .footer{ 
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 4px 5px rgba(248, 9, 9, 0.488);
@@ -206,4 +214,49 @@ color: rgb(55, 105, 224);
 
 .btn-user:hover{
   color: crimson;
+}
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 600px){
+
+
+  .mewtwo-inputUser{
+   
+    margin-left: 18rem;
+    margin-top: -40rem;
+  
+  }
+  .mew-inputUser{
+  
+     margin-left: -5rem;
+      margin-top: 1rem;
+   
+   }
+
+}
+
+@media(min-width: 900px){
+
+
+  .mewtwo-inputUser{
+   
+    margin-left: 30rem;
+    margin-top: -35rem;
+  
+  }
+  .mew-inputUser{
+  
+     margin-left: -20rem;
+      margin-top: -5rem;
+   
+   }
+
 }
