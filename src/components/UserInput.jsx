@@ -28,7 +28,7 @@ const submit = (e) => {
     <div className="input-user">
         <form className='form-user' onSubmit={submit}>
             <h1>Hello!!! trainer...</h1>
-            <img className='imgUser img-characters' src="src/img/characters.png" alt="" />
+            <img className='imgUser img-characters' src="gh-pages/characters.png" alt="" />
             <br />
             <input className='input-userName'
             type="text" 
@@ -40,9 +40,9 @@ const submit = (e) => {
             <button className='btn-user'><i class="fa-solid fa-paper-plane"></i></button>
         </form>
 <div>
-    <img className='imgUser mew-inputUser' id='mew' src="src/img/meww.png" alt="" />
-    <img className='imgUser mewtwo-inputUser' id='mewtwo' src="src/img/Mewtwo.png" alt="" />
-    <img className='imgUser pokeball-inputUser' id='transicion' src="src/img/pokeball-people-pokemon-nintendo-video-game-gaming-gartoon-ball-512.webp" alt="" />
+    <img className='imgUser mew-inputUser' id='mew' src="gh-pages/meww.png" alt="" />
+    <img className='imgUser mewtwo-inputUser' id='mewtwo' src="gh-pages/Mewtwo.png" alt="" />
+    <img className='imgUser pokeball-inputUser' id='transicion' src="gh-pages/pokeball-people-pokemon-nintendo-video-game-gaming-gartoon-ball-512.webp" alt="" />
 
 </div>
 
