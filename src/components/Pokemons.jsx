@@ -45,18 +45,21 @@ const Pokemons = () => {
 
   return (
     <div className="Search-Pokemon">
-      <h1>Pokedex</h1>
-      <p>Welcome {user} it is the Pokedex</p>
+      <div className="search">
+      <p>Welcome {user} 
+      <br />
+      it is the Pokedex</p>
+      <br />
       <form onSubmit={submit}>
         <input type="text"
           value={characterSearch}
           onChange={e => setCharacterSearch(e.target.value)}
         />
-        <button>search</button>
+        <button><i className="fa-solid fa-magnifying-glass"></i></button>
       </form>
 
       <select onChange={filterTypes} >
-        <option value="">select type</option>
+        <option value="">Search Type</option>
         {
           types.map((type) => (
             <option
@@ -69,6 +72,8 @@ const Pokemons = () => {
         }
 
       </select>
+
+      </div>
 
       <ul className="Card-container">
         {
