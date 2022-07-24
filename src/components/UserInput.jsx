@@ -36,7 +36,7 @@ const UserInput = () => {
                     onChange={(e) => setUserName(e.target.value)}
                     placeholder="Introducing your name"
                 />
-                <button className='btn-user'><i class="fa-solid fa-paper-plane"></i></button>
+                <button className='btn-user'><i className="fa-solid fa-paper-plane"></i></button>
             </form>
             <div>
                 <img className='imgUser mew-inputUser' id='mew' src="https://www.pngplay.com/wp-content/uploads/11/Mew-Pokemon-PNG-Photo-Image.png" alt="" />

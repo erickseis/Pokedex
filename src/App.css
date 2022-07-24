@@ -281,6 +281,100 @@
 
 }
 
+.Search-Pokemon{
+  width: 300px;
+  height: 200px;
+  z-index: 20;
+  margin-top: -15rem;
+}
+
+
+
+
+
+.Card-container {
+margin-top: 5rem;
+display: grid;
+gap: 4rem;  
+place-content: center;
+ }
+
+.Cards {
+  background-color: rgb(143, 238, 122);
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px 2px gray;
+ 
+}
+.Cards h3{
+  position: absolute;
+  font-size: 30px;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  
+}
+.list-feature{
+  width: 38%;
+  list-style: none;
+  position: relative;
+  left: 15rem;
+  bottom: 15rem;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.list-feature li{
+  background-color: rgba(240, 230, 230, 0.436);
+  border-radius: 10px;
+}
+
+
+
+.img-contend{
+  opacity: 60%;
+  background-size: 220px;
+  width: 220px;
+  height: 220px;
+  display: grid;
+  margin-top: 4rem;
+  margin-left: 1rem;
+  animation: rotate 3s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes rotate{
+  0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(1turn);
+}
+
+  
+}
+
+
+.img-pokeCard {
+    width: 200px;
+    margin-top: -1rem;
+    margin-left: 1rem;
+    position: absolute;
+    margin-top: -15rem;
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -310,7 +404,7 @@
 }
 
 @media(min-width: 900px) {
- 
+
   #h1 {
     display: flex;
     margin-top: -10rem;

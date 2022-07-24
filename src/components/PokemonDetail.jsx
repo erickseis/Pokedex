@@ -15,9 +15,9 @@ const PokemonDetail = () => {
 
 
     return (
-        <div>
+        <div >
             <h1>{character.name}</h1>
-            <img src={character.sprites?.other.dream_world.front_default} alt="" />
+            <img  src={character.sprites?.other.dream_world.front_default} alt="" />
         </div>
     );
 };

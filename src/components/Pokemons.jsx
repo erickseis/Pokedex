@@ -44,7 +44,7 @@ const Pokemons = () => {
 
 
   return (
-    <div>
+    <div className="Search-Pokemon">
       <h1>Pokedex</h1>
       <p>Welcome {user} it is the Pokedex</p>
       <form onSubmit={submit}>
@@ -70,10 +70,10 @@ const Pokemons = () => {
 
       </select>
 
-      <ul>
+      <ul className="Card-container">
         {
           characters?.map(character => (
-            <CharacterItem
+            <CharacterItem  
               key={character.url ? character.url : character.pokemon.url} CharacterUrl={character.url ? character.url : character.pokemon.url}
             />
 
