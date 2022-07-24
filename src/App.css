@@ -281,7 +281,12 @@
 
 }
 
+.audio{
+  
+margin-top: 3rem;
+position: absolute;
 
+}
 
 
 
@@ -311,6 +316,7 @@
 }
 
 @media(min-width: 900px) {
+ 
   #h1 {
     display: flex;
     margin-top: -10rem;

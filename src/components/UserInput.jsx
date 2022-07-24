@@ -46,6 +46,7 @@ const UserInput = () => {
                 <img id='Ball-mew' src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9890e778-66bc-4ba7-a99c-625a5dc98e6a/dat65fv-60965571-40d9-493f-bb8f-5608dcb910ec.png/v1/fill/w_550,h_550,strp/bola_energia_by_katiirina_dat65fv-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTUwIiwicGF0aCI6IlwvZlwvOTg5MGU3NzgtNjZiYy00YmE3LWE5OWMtNjI1YTVkYzk4ZTZhXC9kYXQ2NWZ2LTYwOTY1NTcxLTQwZDktNDkzZi1iYjhmLTU2MDhkY2I5MTBlYy5wbmciLCJ3aWR0aCI6Ijw9NTUwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.gt8mpdN6564lsSSQdzBYgfjbXd14hjOhw5CUm0Wr2yk" alt="" />
             </div>
 
+        <audio className='audio' src="http://www.sonidosmp3gratis.com/sounds/pokemon-intro.mp3" controls autoPlay loop></audio>
         </div>
     );
 };
