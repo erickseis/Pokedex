@@ -24,10 +24,7 @@
 }
 #poke{
   min-height: 100px;
-  
 }
-
-
 .footer{ 
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 4px 5px rgba(248, 9, 9, 0.488);
@@ -189,6 +186,15 @@ transform: translateY(5px);
 }
 } 
 
+.Ball-Atack{
+ width: 60px;
+ position: absolute;
+ margin-top: -37rem;
+ margin-left: 13.5rem;
+ z-index: 6;
+ opacity: 80%;
+}
+
 .input-userName{
   height: 30px;
   width: 250px;
@@ -217,9 +223,44 @@ color: rgb(55, 105, 224);
 }
 
 
+.Ball-Atack{
+  animation:  move 2s infinite;
+  animation-delay: 1000ms;
+  animation-name: ball;
+}
 
+@keyframes ball{
+0%{
 
+}
+25%{
+ transform: scale(2);
+}
+50%{
+  transform: translateY(20px);
+  transform: translateX(20px);
+}
 
+}
+
+#Ball-mew{
+  width: 200px;
+  position: absolute;
+  z-index: -2;
+  bottom: 4rem;
+  left: 7rem;
+  animation:  move 8s infinite;
+  animation-delay: 1000ms;
+  animation-name: ball;
+}
+
+@keyframes ball{
+
+25%{
+ transform: scale(1.5);
+}
+
+}
 
 
 
@@ -244,7 +285,11 @@ color: rgb(55, 105, 224);
 }
 
 @media(min-width: 900px){
-
+#h1{
+  display: flex;
+  margin-top: -10rem;
+  font-size: 50px;
+}
 
   .mewtwo-inputUser{
    
