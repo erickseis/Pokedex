@@ -1,18 +1,19 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.App{
+
+.App {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
-.header{
+.header {
   background-color: rgb(245, 33, 9);
   box-shadow: 4px 5px rgba(128, 128, 128, 0.488);
   margin-bottom: -5rem;
@@ -22,10 +23,12 @@
   display: flex;
   justify-content: center;
 }
-#poke{
+
+#poke {
   min-height: 100px;
 }
-.footer{ 
+
+.footer {
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 4px 5px rgba(248, 9, 9, 0.488);
   opacity: 70%;
@@ -35,7 +38,7 @@
 
 }
 
-#h1{
+#h1 {
   display: flex;
   font-family: monospace;
   white-space: nowarp;
@@ -45,20 +48,25 @@
   justify-content: center;
   text-align: center;
   margin-left: 3rem;
-  animation:  typing 2s steps(12), blink .5s infinite step-end alternate;
-  overflow:hidden
+  animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+  overflow: hidden
 }
-@keyframes typing{
-  from {width: 0;}
+
+@keyframes typing {
+  from {
+    width: 0;
   }
+}
 
-  @keyframes blink{
-    50% {border-color: transparent;}
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
+}
 
 
 
-.form-user{
+.form-user {
   margin-top: 30%;
   width: 360px;
   height: 450px;
@@ -67,16 +75,18 @@
 
 }
 
-.imgUser{  /*------------*/
+.imgUser {
+  /*------------*/
   width: 100px;
-  }
-.img-characters{
-  align-items: center;
-  width: 350px;
- 
 }
 
-.pokeball-inputUser{
+.img-characters {
+  align-items: center;
+  width: 350px;
+
+}
+
+.pokeball-inputUser {
   opacity: 60%;
   width: 350px;
   position: absolute;
@@ -84,72 +94,77 @@
   margin-top: -25rem;
   border-radius: 50%;
   box-shadow: 10px 10px 20px 10px rgb(80, 78, 78);
-  
+
 }
-#transicion{
-  animation:  move 10s infinite;
+
+#transicion {
+  animation: move 10s infinite;
   animation-delay: 1000ms;
 }
 
-@keyframes move{
-0%{
-  width: 350px;
-}
-25%{
-  
-  width: 250px;
-}
-50%{
-  
-  width: 300px;
-}
-25%{
-  
-  width: 350px;
-transform: translateY(2px);
+@keyframes move {
+  0% {
+    width: 350px;
+  }
 
-}
+  25% {
+
+    width: 250px;
+  }
+
+  50% {
+
+    width: 300px;
+  }
+
+  25% {
+
+    width: 350px;
+    transform: translateY(2px);
+
+  }
 }
 
-.mew-inputUser{
- position: absolute;
+.mew-inputUser {
+  position: absolute;
   margin-left: 2rem;
   width: 150px;
   margin-top: -3.5rem;
   z-index: 5;
 }
 
-#mew{
-  animation:  move 2s infinite;
+#mew {
+  animation: move 2s infinite;
   animation-delay: 1000ms;
   animation-name: mew;
 }
 
-@keyframes mew{
-0%{
+@keyframes mew {
+  0% {}
 
+  25% {
+    transform: translateY(1px);
+    transform: translateX(2px);
+  }
+
+  50% {
+    transform: translateY(10px);
+    transform: translateX(4px);
+  }
+
+  25% {
+
+
+    transform: translateY(2px);
+
+  }
 }
-25%{
-  transform: translateY(1px);
-  transform: translateX(2px);
-}
-50%{
-  transform: translateY(10px);
-  transform: translateX(4px);
-}
-25%{
-  
-  
-transform: translateY(2px);
-
-}
-} 
 
 
 
 
 
-.mewtwo-inputUser{
+.mewtwo-inputUser {
 
   position: absolute;
   margin-left: 13rem;
@@ -160,42 +175,43 @@ transform: translateY(2px);
 
 
 
-#mewtwo{
-  animation:  move 2s infinite;
+#mewtwo {
+  animation: move 2s infinite;
   animation-delay: 1000ms;
   animation-name: mewtwo;
 }
 
-@keyframes mewtwo{
-0%{
+@keyframes mewtwo {
+  0% {}
 
-}
-25%{
-  transform: translateY(2px);
-  transform: translateX(4px);
-}
-50%{
-  transform: translateY(10px);
-  transform: translateX(6px);
-}
-25%{
-  
-  
-transform: translateY(5px);
+  25% {
+    transform: translateY(2px);
+    transform: translateX(4px);
+  }
 
-}
-} 
+  50% {
+    transform: translateY(10px);
+    transform: translateX(6px);
+  }
 
-.Ball-Atack{
- width: 60px;
- position: absolute;
- margin-top: -37rem;
- margin-left: 13.5rem;
- z-index: 6;
- opacity: 80%;
+  25% {
+
+
+    transform: translateY(5px);
+
+  }
 }
 
-.input-userName{
+.Ball-Atack {
+  width: 60px;
+  position: absolute;
+  margin-top: -37rem;
+  margin-left: 13.5rem;
+  z-index: 6;
+  opacity: 80%;
+}
+
+.input-userName {
   height: 30px;
   width: 250px;
   border-radius: 20px;
@@ -203,105 +219,137 @@ transform: translateY(5px);
   box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.634);
   text-align: center;
 }
-.input-userName:hover{
+
+.input-userName:hover {
   box-shadow: 2px 2px 2px 2px rgba(222, 48, 48, 0.634);
 }
-.btn-user{
-font-size: 22px;
-background-color: transparent;
-border: transparent;
-position: absolute;
-z-index: 2;
-margin-left:-2.5rem;
-margin-top: .2rem;
-color: rgb(55, 105, 224);
+
+.btn-user {
+  font-size: 22px;
+  background-color: transparent;
+  border: transparent;
+  position: absolute;
+  z-index: 2;
+  margin-left: -2.5rem;
+  margin-top: .2rem;
+  color: rgb(55, 105, 224);
 }
 
 
-.btn-user:hover{
+.btn-user:hover {
   color: crimson;
 }
 
 
-.Ball-Atack{
-  animation:  move 2s infinite;
+.Ball-Atack {
+  animation: move 2s infinite;
   animation-delay: 1000ms;
   animation-name: ball;
 }
 
-@keyframes ball{
-0%{
+@keyframes ball {
+  0% {}
+
+  25% {
+    transform: scale(2);
+  }
+
+  50% {
+    transform: translateY(20px);
+    transform: translateX(20px);
+  }
 
 }
-25%{
- transform: scale(2);
-}
-50%{
-  transform: translateY(20px);
-  transform: translateX(20px);
-}
 
-}
-
-#Ball-mew{
+#Ball-mew {
+  display: flex;
   width: 200px;
   position: absolute;
   z-index: -2;
   bottom: 1rem;
   left: 3rem;
-  animation:  move 8s infinite;
+  animation: move 8s infinite;
   animation-delay: 1000ms;
   animation-name: ball;
 }
 
-@keyframes ball{
+@keyframes ball {
 
-25%{
- transform: scale(1.5);
+  25% {
+    transform: scale(1.5);
+  }
+
 }
 
-}
 
 
 
 
+@media(min-width: 600px) {
 
-@media(min-width: 600px){
 
+  .mewtwo-inputUser {
 
-  .mewtwo-inputUser{
-   
     margin-left: 18rem;
     margin-top: -40rem;
-  
+
   }
-  .mew-inputUser{
-  
-     margin-left: -5rem;
-      margin-top: 1rem;
-   
-   }
+
+  .mew-inputUser {
+
+    margin-left: -5rem;
+    margin-top: 1rem;
+
+  }
+
+  .Ball-Atack {
+    margin-top: -39rem;
+    margin-left: 18.5rem;
+
+  }
 
 }
 
-@media(min-width: 900px){
-#h1{
-  display: flex;
-  margin-top: -10rem;
-  font-size: 50px;
-}
+@media(min-width: 900px) {
+  #h1 {
+    display: flex;
+    margin-top: -10rem;
+    font-size: 50px;
+  }
 
-  .mewtwo-inputUser{
-   
+  .mewtwo-inputUser {
+    width: 250px;
     margin-left: 30rem;
-    margin-top: -35rem;
-  
+    margin-top: -30rem;
+
   }
-  .mew-inputUser{
-  
-     margin-left: -20rem;
-      margin-top: -5rem;
-   
-   }
+
+  .mew-inputUser {
+
+    margin-left: -20rem;
+    margin-top: -5rem;
+
+  }
+
+  .Ball-Atack {
+    width: 100px;
+    margin-top: -27.5rem;
+    margin-left: 30.5rem;
+
+  }
+
+  .mew-inputUser {
+
+    width: 200px;
+
+  }
+
+
+  #Ball-mew {
+
+    width: 300px;
+    bottom: 1rem;
+    left: 13.5rem;
+  }
 
 }
