@@ -247,7 +247,7 @@ color: rgb(55, 105, 224);
   width: 200px;
   position: absolute;
   z-index: -2;
-  bottom: 2rem;
+  bottom: 1rem;
   left: 3rem;
   animation:  move 8s infinite;
   animation-delay: 1000ms;
