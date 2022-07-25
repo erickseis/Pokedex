@@ -295,7 +295,7 @@
   width: 100vw;
   height: 200px;
   z-index: 20;
-  margin-top: -27rem;
+  margin-top: -18rem;
   display: grid;
   place-items: center;
 
@@ -539,7 +539,12 @@ padding-right: 2rem;
   }
 
 
-
+  .Search-Pokemon{
+ 
+    margin-top: -27rem;
+    
+  
+  }
 
   .search input{
     font-size: 35px;
