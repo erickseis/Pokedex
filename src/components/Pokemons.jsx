@@ -47,8 +47,7 @@ const Pokemons = () => {
     <div className="Search-Pokemon">
       <div className="search">
       <p>Welcome {user} 
-      <br />
-      it is the Pokedex</p>
+      </p>
       <br />
       <form onSubmit={submit}>
         <input type="text"
