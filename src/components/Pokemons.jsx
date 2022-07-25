@@ -44,6 +44,8 @@ const Pokemons = () => {
 
 
   return (
+    <>
+    <img className="background-search" src="https://www.videogameschronicle.com/files/2021/08/pokemon-legends-arceus.jpg" alt="" />
     <div className="Search-Pokemon">
       <div className="search">
       <p>Welcome {user} 
@@ -58,7 +60,7 @@ const Pokemons = () => {
       </form>
 
       <select onChange={filterTypes} >
-        <option value="">Search Type</option>
+        <option value="">Type</option>
         {
           types.map((type) => (
             <option
@@ -85,7 +87,9 @@ const Pokemons = () => {
           )}
       </ul>
     </div>
+    </>
   );
+
 };
 export default Pokemons;
 

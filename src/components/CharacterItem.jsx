@@ -98,7 +98,7 @@ const colorType =() =>{
         <div className={colorType()} onClick={()=> navigate(`/pokemons/${character.id}`)}>
           
             <h3> {character.name} </h3>
-                <img className='img-contend' src="https://www.pngall.com/wp-content/uploads/4/Pokemon-Pokeball-PNG-File.png" alt="" />
+                <img className='img-contend' src="https://www.pngall.com/wp-content/uploads/4/Pokemon-Pokeball-PNG-Photo.png" alt="" />
                 <img className='img-pokeCard' src={character.sprites?.other.home.front_default} alt="" />
                 <div className='list-feature'>
                     <li><strong>Type:</strong>  {character.types?.[0].type.name}  {character.types?.[1]?.type.name}   </li>
