@@ -356,6 +356,7 @@ padding-right: 2rem;
  }
 
 .Cards {
+  background-image: url();
   background-color: rgba(143, 238, 122, 0.595);
   width: 350px;
   height: 270px;
@@ -498,18 +499,10 @@ padding-right: 2rem;
     z-index: 10;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+.loading{
+  width: 500px;
+  position: fixed;
+}
 
 @media(min-width: 800px) {
 

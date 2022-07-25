@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import CharacterItem from "./CharacterItem";
 
 
+
 const Pokemons = () => {
   const user = useSelector((state) => state.user);
 
@@ -16,8 +17,10 @@ const Pokemons = () => {
 
   useEffect(() => {
     axios.get("https://pokeapi.co/api/v2/pokemon/")
-      .then(res => setCharacters(res.data.results));
-
+      .then(res => {
+        setCharacters(res.data.results)
+        // setIsLoading(!isLoading)    
+      })
     axios.get(`https://pokeapi.co/api/v2/type/`)
       .then(res => setTypes(res.data.results))
   }, [])
@@ -93,16 +96,3 @@ const Pokemons = () => {
 };
 export default Pokemons;
 
-// character = {
-//   name: ""
-//   url: ""
-// }
-
-// character = {
-//   pokemon:{
-//     name: "",
-//     url: ""
-//   }
-//   slot: ""
-
-// }
