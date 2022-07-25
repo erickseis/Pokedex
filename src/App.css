@@ -292,12 +292,13 @@
   }
 
 .Search-Pokemon{
-  width: 100%;
+  width: 400px;
   height: 200px;
   z-index: 20;
   margin-top: -18rem;
-  display: grid;
-  place-items: center;
+  display: block;
+  left: 50%;
+  right: 50%;
 
 }
 .search p{
