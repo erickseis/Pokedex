@@ -2,6 +2,8 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
+import ColorType from "../hooks/ColorType";
+
 import CharacterItem from "./CharacterItem";
 
 
@@ -25,8 +27,7 @@ const Pokemons = () => {
       .then(res => setTypes(res.data.results))
   }, [])
 
-  console.log(characters)
-  console.log(types)
+
 
 
   const submit = e => {
@@ -40,7 +41,6 @@ const Pokemons = () => {
       .then(res => setCharacters(res.data.pokemon))
   }
 
-  console.log(characters)
 
 
 
@@ -82,10 +82,14 @@ const Pokemons = () => {
       <ul className="Card-container">
         {
           characters?.map(character => (
+            
             <CharacterItem  
-              key={character.url ? character.url : character.pokemon.url} CharacterUrl={character.url ? character.url : character.pokemon.url}
+              key={character.url ? character.url : character.pokemon.url} 
+              CharacterUrl={character.url ? character.url : character.pokemon.url}
             />
 
+           
+            
           )
           )}
       </ul>

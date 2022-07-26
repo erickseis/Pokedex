@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import Pokemons from './Pokemons';
+import Loader from './Loader';
 
 const CharacterItem = ({CharacterUrl}) => {
     const [character, setCharacter] = useState({});
@@ -12,10 +13,19 @@ const CharacterItem = ({CharacterUrl}) => {
         .then(res=> setCharacter(res.data))
     },[])
     
-    console.log(character)
+
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(()=>{
+  
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 2500);
+    },[])
+
 
 const typePokemon = character.types?.[0].type.name;
-
+console.log(character)
 const colorType =() =>{
     if(typePokemon == "dark"){
         return(
@@ -95,8 +105,11 @@ const colorType =() =>{
     
 
     return (
+        <>
+        {isLoading ? <Loader/> : (
+         
         <div className={colorType()} onClick={()=> navigate(`/pokemons/${character.id}`)}>
-          
+                  
             <h3> {character.name} </h3>
                 <img className='img-contend' src="https://www.pngall.com/wp-content/uploads/4/Pokemon-Pokeball-PNG-Photo.png" alt="" />
                 <img className='img-pokeCard' src={character.sprites?.other.home.front_default} alt="" />
@@ -109,9 +122,10 @@ const colorType =() =>{
                               
                 </div>
         
-        
-
             </div>
+            )} 
+       
+            </>
     );
 };
 
