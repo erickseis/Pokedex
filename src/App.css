@@ -878,6 +878,8 @@
 
 
 
+
+
   .PokemonDetail {
 
     width: 100vw;
@@ -887,75 +889,37 @@
   }
   
   .ball-detail {
-    opacity: 10%;
-    width: 900px;
-    margin-top: -10rem;
-    margin-left: 10rem;
-    animation: rotates 3s linear infinite;
-    transform-origin: 50% 50%;
-    position: absolute;
-    z-index: -10;
-  }
-  
-  @keyframes rotates {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(1turn);
-    }
+    width: 700px;
+    margin-top: -14rem;
+    margin-left: 15rem;
   }
   
   
-  
-  .name-img {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
   
   .name-img h1 {
-    display: flex;
-    flex-direction: column;
-    color: rgb(43, 42, 42);
-    width: 25%;
+    width: 300PX;
     height: 60px;
-    background-color: cyan;
-    border-radius: 30px;
-    text-align: center;
+   justify-content: center;
     align-items: center;
+    margin-left: 32rem;
   }
   
   .imgDetail {
-    width: 500px;
+    width: 450px;
+    margin-top: -8rem;
   
   }
   
   .img-base {
-    width: 40%;
-    height: 60px;
-    z-index: -10;
-    margin-top: -5rem;
-    background-color: cyan;
-    border-radius: 50%;
+    width: 35%;
+    margin-left: -3rem;
   }
   
   .description {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 18rem;
+    top: 26rem;
   
   }
-  
-  .description-text {
-    transform: perspective(20deg);
-  }
-  
-  
+    
   .stats {
     width: 35%;
     min-height: 40%;
@@ -964,39 +928,25 @@
     flex-direction: column;
     position: absolute;
     right: 0;
-    margin-right: 5rem;
-    top: 15rem;
-  
-    /* transform: rotateY(-47deg) rotateX(14deg) rotateZ(-9deg); */
+    margin-right: 2rem;
+    top: 12rem;
     transform: rotateY(-49deg) rotateX(12deg) rotateZ(-4deg);
     gap: .2rem;
   }
   
-  .progress {
-    height: 25px;
-    font-size: 25px;
-  }
   
-  .progress-bar {
-    background-color: rgba(0, 229, 255, 0.799);
-    width: 90px;
-  }
+  
   
   
   
   .stats h1 {
-    color: rgb(255, 255, 255);
-    width: 200px;
-    background-color: cyan;
-    border-radius: 30px;
-    text-align: center;
     margin-left: 9rem;
   }
   
   .moves {
     padding-top: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 1rem;
     flex-direction: column;
     justify-content: center;
@@ -1016,7 +966,8 @@
   .list-move {
     background-color: cyan;
     border-radius: 10px;
-    height: 40px;
+    width: 200px;
+    height: 80px;
     font-size: 25px;
     text-align: center;
   
