@@ -26,6 +26,7 @@ const CharacterItem = ({CharacterUrl}) => {
 
 const typePokemon = character.types?.[0].type.name;
 console.log(character)
+
 const colorType =() =>{
     if(typePokemon == "dark"){
         return(

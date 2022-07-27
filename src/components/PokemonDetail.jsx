@@ -42,10 +42,10 @@ const PokemonDetail = () => {
                     <li>  <strong> ID #</strong>{character.id}</li>
                     <li><strong>height</strong>{character.height}</li>
                 
-                    <li><strong>Abilities</strong> {character.abilities?.[0]?.ability?.name} </li>
+                    <li><strong>Abilities</strong> <span> {character.abilities?.[0]?.ability?.name} </span></li>
                 
-                    <li><strong>Type</strong> {character.types?.[0].type.name}</li>
-                    <li><strong>Forms</strong> {character.forms?.[0]?.name}</li>
+                    <li><strong>Type</strong> <span> {character.types?.[0].type.name}</span></li>
+                    <li><strong>Forms</strong><span> {character.forms?.[0]?.name}</span></li>
                    
                 
                 </ul>
