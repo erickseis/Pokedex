@@ -17,7 +17,8 @@ const Pokemons = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get("https://pokeapi.co/api/v2/pokemon/")
+
+    axios.get(`https://pokeapi.co/api/v2/pokemon/`)
       .then(res => {
         setCharacters(res.data.results)
         // setIsLoading(!isLoading)    
@@ -26,7 +27,7 @@ const Pokemons = () => {
       .then(res => setTypes(res.data.results))
   }, [])
 
-
+console.log(characters)
 
 
   const submit = e => {
@@ -40,6 +41,22 @@ const Pokemons = () => {
       .then(res => setCharacters(res.data.pokemon))
   }
 
+
+
+  const [page, setPage] = useState(1);
+  const lastIndex = page * 10;
+  const firstIndex = lastIndex - 10;
+  const pokemonsPaginated = characters?.slice(firstIndex, lastIndex);
+
+  const lastPage = Math.ceil(characters?.length / 10);
+
+  const numbers = []; // [1, 2, 3, 4]
+  for (let i = 1; i <= lastPage; i++) {
+    numbers.push(i);
+  }
+
+
+  console.log(pokemonsPaginated)
 
 
 
@@ -78,9 +95,12 @@ const Pokemons = () => {
 
       </div>
 
+     
+
+      
       <ul className="Card-container">
         {
-          characters?.map(character => (
+          pokemonsPaginated?.map(character => (
             
             <CharacterItem  
               key={character.url ? character.url : character.pokemon.url} 
@@ -92,6 +112,27 @@ const Pokemons = () => {
           )
           )}
       </ul>
+<br />
+<div className="btn-container">
+      <button className="btn-prev" onClick={() => 
+       setPage(page - 1)}
+       disabled={page === 1}
+       >
+        <i className="bi bi-caret-left-fill"></i>
+      </button>
+
+      {numbers.map((number) => (
+        <button className="btn-num" onClick={() => setPage(number)}>{number}</button>
+      ))}
+
+      <button className="btn-next" onClick={() => 
+        setPage(page + 1)}
+        disabled={page === lastPage}
+         >
+        <i className="bi bi-caret-right-fill"></i>
+      </button>
+   
+      </div>
     </div>
     </>
   );

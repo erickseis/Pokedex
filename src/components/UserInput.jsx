@@ -55,7 +55,7 @@ const UserInput = ({isLoading}) => {
 
 
             )} 
-
+                <footer className='footer' ></footer>
         </div>
     );
 };

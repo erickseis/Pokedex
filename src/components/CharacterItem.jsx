@@ -26,7 +26,8 @@ const CharacterItem = ({CharacterUrl}) => {
 
 
 const typePokemon = character?.types?.[0]?.type?.name;
- console.log(character)
+
+
 
     return (
         <>
@@ -35,7 +36,7 @@ const typePokemon = character?.types?.[0]?.type?.name;
         <div className={getTypeColor(typePokemon)} id={"Cards"}  onClick={()=> navigate(`/pokemons/${character.id}`)}>
                
                     
-            <h3> {character.name} </h3>
+            <h3 className='name-inCard' > {character.name} </h3>
                 <img className='img-contend' src="https://www.pngall.com/wp-content/uploads/4/Pokemon-Pokeball-PNG-Photo.png" alt="" />
                 <img className='img-pokeCard' src={character.sprites?.other.home.front_default} alt="" />
                 <div className='list-feature'>

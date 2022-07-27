@@ -17,8 +17,10 @@ const PokemonDetail = () => {
 
     }, [id])
 
-
     const typePokemon = character.types?.[0].type.name;
+
+    const sumStats =character.stats?.[0].base_stat + character.stats?.[1].base_stat + character.stats?.[2].base_stat + character.stats?.[3].base_stat + character.stats?.[4].base_stat + character.stats?.[5].base_stat
+   
     return (
         <div className='PokemonDetail' >
             <div className='img-ball-detail'>
@@ -96,7 +98,7 @@ const PokemonDetail = () => {
                     {getTypeColor(typePokemon)} role="progressbar" aria-label="Example with label" style={{ width: `${character.stats?.[5].base_stat}%` }} aria-valuenow={`${character.stats?.[5].base_stat}`} aria-valuemin="0" aria-valuemax="100"> SPEED {character.stats?.[5].base_stat}%</div>
                 </div>
                     <br />
-                <h2><strong>Total </strong>"suma total "</h2>
+                <h2><strong>Total Power </strong>"{sumStats}  "</h2>
             
             </section>
             <br />
@@ -121,5 +123,3 @@ const PokemonDetail = () => {
 };
 
 export default PokemonDetail;
-
-//<span>{character.ability?.[1]?.ability?.name}
