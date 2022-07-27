@@ -593,10 +593,12 @@
   border-radius: 30px;
   text-align: center;
   align-items: center;
+  margin-top: -1rem;
+  
 }
 
 .imgDetails{
-  padding-top: 4rem;
+  padding-top: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -676,6 +678,7 @@
   border-radius: 30px;
   text-align: center;
   margin-left: 4rem;
+  margin-bottom: 2rem;
 
 }
 
