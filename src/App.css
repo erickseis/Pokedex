@@ -291,6 +291,7 @@
 
 }
 
+
 .background-search {
   margin-top: 1.7rem;
   width: 100vw;
@@ -368,6 +369,25 @@
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
+#Cards:hover {
+  animation: move 2s ease-in-out;
+  animation-delay: 4ms;
+  animation-name: card;
+}
+
+@keyframes card {
+
+  25% {
+    transform: scale(1.2);
+  }
+
+}
+
+
+
+
+
 
 #Cards {
   width: 350px;
@@ -471,20 +491,6 @@
 
 
 
-
-.Cards:hover {
-  animation: move 2s ease-in-out;
-  animation-delay: 4ms;
-  animation-name: card;
-}
-
-@keyframes card {
-
-  25% {
-    transform: scale(1.2);
-  }
-
-}
 
 
 
