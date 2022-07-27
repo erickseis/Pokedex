@@ -26,7 +26,10 @@ const PokemonDetail = () => {
           
           </div>
           <div className='imgDetails'>  
+          <div className='imgabso'>
             <img className='imgDetail' src={character.sprites?.other.home.front_default} alt="" />
+
+          </div>
             <h1></h1>
             <div className='img-base'> 
             </div>

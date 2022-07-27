@@ -544,17 +544,29 @@
 
 .img-ball-detail{
   margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgabso{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+
 .ball-detail {
-  margin-top: 2rem;
+  margin-top: 15rem;
   opacity: 10%;
   width: 350px;
-  margin-left: -8rem;
+  margin-left: rem;
   animation: rotates 3s linear infinite;
   transform-origin: 50% 50%;
-  position: absolute;
   z-index: -10;
+  position: absolute;
+  
+
 }
 
 @keyframes rotates {
@@ -573,7 +585,6 @@
 
 
 .name-img {
-  position: absolute;
   margin-top: -12rem;
   display: flex;
   justify-content: center;
@@ -598,7 +609,7 @@
 }
 
 .imgDetails{
-  padding-top: 5rem;
+  padding-top: 16rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -889,9 +900,8 @@
   }
   
   .ball-detail {
-    width: 700px;
-    margin-top: -14rem;
-    margin-left: 15rem;
+    width: 800px;
+    margin-top: 7rem;
   }
   
   
@@ -901,18 +911,18 @@
     height: 60px;
    justify-content: center;
     align-items: center;
-    margin-left: 32rem;
   }
   
   .imgDetail {
-    width: 450px;
-    margin-top: -8rem;
+    width: 500px;
+    margin-top: -12.5rem;
   
   }
   
   .img-base {
-    width: 35%;
+    width: 40%;
     margin-left: -3rem;
+    box-shadow: 10px 10px 10px 10px gray;
   }
   
   .description {
