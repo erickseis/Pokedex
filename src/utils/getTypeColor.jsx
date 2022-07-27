@@ -1,89 +1,82 @@
-import axios from 'axios';
-import React, { useState, useEffect } from 'react';
-import Pokemons from '../components/Pokemons';
 
-
-
-const ColorType = ({typePokemon}) => {
+const getTypeColor = (typePokemon) => {
  
-
-const colors =() =>{
     if(typePokemon == "dark"){
         return(
-            "Cards dark" 
+            "dark" 
         )
     }else if(typePokemon =="normal"){
         return(
-            "Cards normal"
+            "normal"
         )
     }else if(typePokemon == "fighting"){
         return(
-            "Cards fighting"
+            "fighting"
         )
     }else if(typePokemon == "flying"){
         return(
-            "Cards flying"
+            "flying"
         )
     }else if(typePokemon == "poison"){
         return(
-            "Cards poison"
+            "poison"
         )
     }else if(typePokemon == "ground"){
         return(
-            "Cards ground"
+            "ground"
         )
     }else if(typePokemon == "rock"){
         return(
-            "Cards rock"
+            "rock"
         )
     }else if(typePokemon == "bug"){
         return(
-            "Cards bug"
+            "bug"
         )
     }else if(typePokemon == "ghost"){
         return(
-            "Cards ghost"
+            "ghost"
         )
     }else if(typePokemon == "steel"){
         return(
-            "Cards steel"
+            "steel"
         )
     }else if(typePokemon == "fire"){
         return(
-            "Cards fire"
+            "fire"
         )
 
     }else if(typePokemon == "water"){
         return(
-            "Cards water"
+            "water"
         )
     }else if(typePokemon =="grass"){
         return(
-            "Cards grass"
+            "grass"
         )
     }else if(typePokemon =="electric"){
         return(
-            "Cards electric"
+            "electric"
         )
     }else if(typePokemon =="psychic"){
         return(
-            "Cards psychic"
+            "psychic"
         )
     }else if(typePokemon =="ice"){
         return(
-            "Cards ice"
+            "ice"
         )
     }else if(typePokemon =="dragon"){
         return(
-            "Cards dragon"
+            "dragon"
         )
     }else if(typePokemon =="fairy"){
         return(
-            "Cards fairy"
+            "fairy"
         )
     }
-}
+
   
 };
 
-export default ColorType;
+export default getTypeColor;

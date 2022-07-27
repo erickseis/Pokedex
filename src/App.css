@@ -359,9 +359,7 @@
   padding-right: 2rem;
 }
 
-.Cards {
-  background-image: url();
-  background-color: rgba(143, 238, 122, 0.595);
+#Cards {
   width: 350px;
   height: 280px;
   border-radius: 20px;
@@ -370,75 +368,93 @@
 }
 
 
-.normal {
+.normal,
+#normal {
   background-color: #e2e3e7bd;
 }
 
-.dark {
+.dark,
+#dark {
   background-color: #ba9df4b6;
 }
 
-.fighting {
+.fighting,
+#fighting {
   background-color: #ededafbb;
 }
 
-.flying {
+.flying,
+#flying {
   background-color: #d8f8e1bc;
 }
 
-.poison {
+.poison,
+#poison {
   background-color: #f25fffb8;
 }
 
-.ground {
+.ground,
+#ground {
   background-color: #fdfd96b6;
 }
 
-.rock {
+.rock,
+#rock {
   background-color: #a68069af;
 }
 
-.bug {
+.bug,
+#bug {
   background-color: #8cfca4ac;
 }
 
-.ghost {
+.ghost,
+#ghost {
   background-color: #bdbfbfa6;
 }
 
-.steel {
+.steel,
+#steel {
   background-color: #c4cacea9;
 }
 
-.fire {
+.fire,
+#fire {
   background-color: #fa5e49b8;
 }
 
-.water {
+.water,
+#water {
   background-color: #84b6f4b2;
 }
 
-.grass {
+.grass,
+#grass {
   background-color: #42ab49c4;
 }
 
-.electric {
+.electric,
+#electric {
   background-color: #f6f630aa;
 }
 
-.psychic {
+.psychic,
+#psychic {
   background-color: #f6d1deb0;
 }
 
-.ice {
+.ice,
+#ice {
   background-color: #0072feb1;
 }
 
-.dragon {
+.dragon,
+#dragon {
   background-color: #d9742cb1;
 }
 
-.fairy {
+.fairy,
+#fairy {
   background-color: #f74fd0b9;
 }
 
@@ -542,13 +558,14 @@
 }
 
 
-.img-ball-detail{
+.img-ball-detail {
   margin-top: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.imgabso{
+
+.imgabso {
   position: relative;
   display: flex;
   justify-content: center;
@@ -558,14 +575,14 @@
 
 .ball-detail {
   margin-top: 15rem;
-  opacity: 10%;
+  opacity: 50%;
   width: 350px;
   margin-left: rem;
   animation: rotates 3s linear infinite;
   transform-origin: 50% 50%;
   z-index: -10;
   position: absolute;
-  
+
 
 }
 
@@ -597,19 +614,18 @@
 .name-img h1 {
   display: flex;
   flex-direction: column;
-  color: rgb(43, 42, 42);
+  color: rgb(0, 0, 0);
   width: 200px;
   height: 40px;
-  background-color: cyan;
   border-radius: 30px;
   margin-left: 4rem;
   text-align: center;
   align-items: center;
   margin-top: -1rem;
-  
+
 }
 
-.imgDetails{
+.imgDetails {
   padding-top: 16rem;
   display: flex;
   align-items: center;
@@ -631,10 +647,9 @@
   width: 300px;
   height: 70px;
   margin-bottom: -15rem;
-  background-color: cyan;
   border-radius: 50%;
   position: absolute;
-    box-shadow: 10px 10px 10px 10px gray;
+  box-shadow: 10px 10px 10px 10px gray;
 }
 
 
@@ -651,9 +666,10 @@
 }
 
 .description-text {
-  
+
   transform: perspective(20deg);
 }
+
 
 
 .stats {
@@ -666,9 +682,6 @@
   right: 0;
   margin-right: 4rem;
   top: 45rem;
-
-  /* transform: rotateY(-47deg) rotateX(14deg) rotateZ(-9deg); */
-  /* transform: rotateY(-49deg) rotateX(12deg) rotateZ(-4deg); */
   gap: .2rem;
 }
 
@@ -678,7 +691,6 @@
 }
 
 .progress-bar {
-  background-color: rgba(0, 229, 255, 0.799);
   width: 90px;
 }
 
@@ -687,7 +699,6 @@
 .stats h1 {
   color: rgb(255, 255, 255);
   width: 200px;
-  background-color: cyan;
   border-radius: 30px;
   text-align: center;
   margin-left: 4rem;
@@ -742,6 +753,7 @@
 .description-list li {
   font-size: 22px;
   height: 40px;
+
   display: flex;
   gap: 2rem;
 
@@ -750,12 +762,21 @@
 
 .description-list li span {
   background-color: cyan;
-  border-radius: 10px;
-  width: 130px;
-  justify-content: center;
-  text-align: center;
+
+
 }
 
+#id-description {
+  color: white;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 2px gray;
+}
 
 
 
@@ -908,38 +929,38 @@
     padding: 10rem;
     padding-top: 12rem;
   }
-  
+
   .ball-detail {
     width: 800px;
     margin-top: 7rem;
   }
-  
-  
-  
+
+
+
   .name-img h1 {
     width: 300PX;
     height: 60px;
-   justify-content: center;
+    justify-content: center;
     align-items: center;
   }
-  
+
   .imgDetail {
     width: 500px;
     margin-top: -12.5rem;
-  
+
   }
-  
+
   .img-base {
     width: 40%;
     margin-left: -3rem;
     box-shadow: 10px 10px 10px 10px gray;
   }
-  
+
   .description {
     top: 26rem;
-  
+
   }
-    
+
   .stats {
     width: 35%;
     min-height: 40%;
@@ -953,16 +974,16 @@
     transform: rotateY(-49deg) rotateX(12deg) rotateZ(-4deg);
     gap: .2rem;
   }
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
   .stats h1 {
     margin-left: 9rem;
   }
-  
+
   .moves {
     padding-top: 2rem;
     display: grid;
@@ -973,7 +994,7 @@
     align-items: center;
     list-style: none;
   }
-  
+
   .container-move {
     display: block;
     width: 100%;
@@ -982,7 +1003,7 @@
     padding-top: 5rem;
     text-align: center;
   }
-  
+
   .list-move {
     background-color: cyan;
     border-radius: 10px;
@@ -990,9 +1011,9 @@
     height: 80px;
     font-size: 25px;
     text-align: center;
-  
+
   }
-  
+
   .description {
     width: 35%;
     min-height: 40%;
@@ -1002,9 +1023,9 @@
     position: absolute;
     bottom: 16rem;
     transform: rotateY(-377deg) rotateX(-3deg) rotateZ(2deg);
-  
+
   }
-  
+
   .description-list li {
     font-size: 30px;
     height: 40px;
@@ -1012,14 +1033,15 @@
     margin-top: 2rem;
     gap: 4rem;
     border-radius: 5px;
-  
-  
+
+
   }
+
   .progress {
     height: 25px;
     font-size: 25px;
   }
-  
+
 
 
 }

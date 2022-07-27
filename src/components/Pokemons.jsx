@@ -2,7 +2,6 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import ColorType from "../hooks/ColorType";
 
 import CharacterItem from "./CharacterItem";
 
