@@ -22,10 +22,13 @@ const PokemonDetail = () => {
                  <img className='ball-detail' src="https://www.pngall.com/wp-content/uploads/4/Pokemon-Pokeball-PNG-Photo.png" alt="" /> 
             </div>
            <div className='name-img'>
-            <h1>{character.name?.toUpperCase() }</h1>
+              <h1>{character.name?.toUpperCase() }</h1>
           
+          </div>
+          <div className='imgDetails'>  
             <img className='imgDetail' src={character.sprites?.other.home.front_default} alt="" />
-            <div className='img-base'> <br />
+            <h1></h1>
+            <div className='img-base'> 
             </div>
             </div>
 

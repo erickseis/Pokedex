@@ -363,7 +363,7 @@
   background-image: url();
   background-color: rgba(143, 238, 122, 0.595);
   width: 350px;
-  height: 270px;
+  height: 280px;
   border-radius: 20px;
   box-shadow: 10px 10px 5px 2px gray;
 
@@ -475,7 +475,7 @@
   list-style: none;
   position: relative;
   left: 13.5rem;
-  bottom: 14rem;
+  bottom: 16rem;
   font-size: 22px;
   display: flex;
   flex-direction: column;
@@ -541,11 +541,16 @@
   padding-top: 12rem;
 }
 
+
+.img-ball-detail{
+  margin-top: 10rem;
+}
+
 .ball-detail {
+  margin-top: 2rem;
   opacity: 10%;
-  width: 900px;
-  margin-top: -10rem;
-  margin-left: 10rem;
+  width: 350px;
+  margin-left: -8rem;
   animation: rotates 3s linear infinite;
   transform-origin: 50% 50%;
   position: absolute;
@@ -564,39 +569,63 @@
 
 
 
+
+
+
 .name-img {
+  position: absolute;
+  margin-top: -12rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
   align-items: center;
+  margin-left: -3rem;
 }
 
 .name-img h1 {
   display: flex;
   flex-direction: column;
   color: rgb(43, 42, 42);
-  width: 25%;
-  height: 60px;
+  width: 200px;
+  height: 40px;
   background-color: cyan;
   border-radius: 30px;
   text-align: center;
   align-items: center;
 }
 
+.imgDetails{
+  padding-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .imgDetail {
-  width: 500px;
+  width: 250px;
+  z-index: 30;
 
 }
 
 .img-base {
-  width: 40%;
-  height: 60px;
-  z-index: -10;
-  margin-top: -5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -21rem;
+  width: 300px;
+  height: 70px;
+  margin-bottom: -15rem;
   background-color: cyan;
   border-radius: 50%;
+  position: absolute;
 }
+
+
+
+
+
 
 .description {
   display: flex;
@@ -607,23 +636,24 @@
 }
 
 .description-text {
+  
   transform: perspective(20deg);
 }
 
 
 .stats {
-  width: 35%;
+  width: 70%;
   min-height: 40%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   position: absolute;
   right: 0;
-  margin-right: 5rem;
-  top: 15rem;
+  margin-right: 4rem;
+  top: 45rem;
 
   /* transform: rotateY(-47deg) rotateX(14deg) rotateZ(-9deg); */
-  transform: rotateY(-49deg) rotateX(12deg) rotateZ(-4deg);
+  /* transform: rotateY(-49deg) rotateX(12deg) rotateZ(-4deg); */
   gap: .2rem;
 }
 
@@ -640,19 +670,19 @@
 
 
 .stats h1 {
-  color: rgb(240, 232, 232);
+  color: rgb(255, 255, 255);
   width: 200px;
   background-color: cyan;
   border-radius: 30px;
   text-align: center;
-  margin-left: 9rem;
+  margin-left: 4rem;
+
 }
 
 .moves {
-  padding-top: 2rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -664,16 +694,19 @@
   width: 100%;
   left: 50%;
   right: 50%;
-  padding-top: 5rem;
+  padding-top: 32rem;
   text-align: center;
 }
 
 .list-move {
   background-color: cyan;
   border-radius: 10px;
-  height: 40px;
-  font-size: 25px;
+  height: 60px;
+  width: 100px;
+  font-size: 20px;
   text-align: center;
+  display: grid;
+  align-items: center;
 
 }
 
@@ -684,18 +717,17 @@
   justify-content: center;
   flex-direction: column;
   position: absolute;
-  bottom: 16rem;
-  transform: rotateY(-377deg) rotateX(-3deg) rotateZ(2deg);
+  margin-top: -10rem;
+  margin-left: -4rem;
+  /* transform: rotateY(-377deg) rotateX(-3deg) rotateZ(2deg); */
 
 }
 
 .description-list li {
-  font-size: 30px;
+  font-size: 22px;
   height: 40px;
   display: flex;
-  margin-top: 2rem;
-  gap: 4rem;
-  border-radius: 5px;
+  gap: 2rem;
 
 
 }
@@ -840,4 +872,176 @@
 
 
   }
+
+
+
+  .PokemonDetail {
+
+    width: 100vw;
+    height: 100vh;
+    padding: 10rem;
+    padding-top: 12rem;
+  }
+  
+  .ball-detail {
+    opacity: 10%;
+    width: 900px;
+    margin-top: -10rem;
+    margin-left: 10rem;
+    animation: rotates 3s linear infinite;
+    transform-origin: 50% 50%;
+    position: absolute;
+    z-index: -10;
+  }
+  
+  @keyframes rotates {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+  
+  
+  
+  .name-img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .name-img h1 {
+    display: flex;
+    flex-direction: column;
+    color: rgb(43, 42, 42);
+    width: 25%;
+    height: 60px;
+    background-color: cyan;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .imgDetail {
+    width: 500px;
+  
+  }
+  
+  .img-base {
+    width: 40%;
+    height: 60px;
+    z-index: -10;
+    margin-top: -5rem;
+    background-color: cyan;
+    border-radius: 50%;
+  }
+  
+  .description {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 18rem;
+  
+  }
+  
+  .description-text {
+    transform: perspective(20deg);
+  }
+  
+  
+  .stats {
+    width: 35%;
+    min-height: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    margin-right: 5rem;
+    top: 15rem;
+  
+    /* transform: rotateY(-47deg) rotateX(14deg) rotateZ(-9deg); */
+    transform: rotateY(-49deg) rotateX(12deg) rotateZ(-4deg);
+    gap: .2rem;
+  }
+  
+  .progress {
+    height: 25px;
+    font-size: 25px;
+  }
+  
+  .progress-bar {
+    background-color: rgba(0, 229, 255, 0.799);
+    width: 90px;
+  }
+  
+  
+  
+  .stats h1 {
+    color: rgb(255, 255, 255);
+    width: 200px;
+    background-color: cyan;
+    border-radius: 30px;
+    text-align: center;
+    margin-left: 9rem;
+  }
+  
+  .moves {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .container-move {
+    display: block;
+    width: 100%;
+    left: 50%;
+    right: 50%;
+    padding-top: 5rem;
+    text-align: center;
+  }
+  
+  .list-move {
+    background-color: cyan;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+  
+  }
+  
+  .description {
+    width: 35%;
+    min-height: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 16rem;
+    transform: rotateY(-377deg) rotateX(-3deg) rotateZ(2deg);
+  
+  }
+  
+  .description-list li {
+    font-size: 30px;
+    height: 40px;
+    display: flex;
+    margin-top: 2rem;
+    gap: 4rem;
+    border-radius: 5px;
+  
+  
+  }
+  
+
+
 }
