@@ -21,3 +21,4 @@ Este proyecto es una Pokedex construida con React JS. Utiliza la PokeAPI para ob
 ¿Tienes alguna pregunta o sugerencia? ¡No dudes en contactarme!
 
 - Correo electrónico: erickseislaboral@gmail.com
+[English](https://github.com/erickseis/Pokedex/blob/main/README.en.md "English")
