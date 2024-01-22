@@ -20,3 +20,7 @@ This project is a Pokedex built with React JS. Use the PokeAPI to get and displa
 Do you have any questions or suggestions? Do not hesitate to contact me!
 
 - Email: erickseislaboral@gmail.com
+  
+- [English](https://github.com/erickseis/Pokedex/blob/main/README.en.md "English")
+- [Portugès](https://github.com/erickseis/Pokedex/blob/main/README.pt.md "Portugues")
+- [Spanish](https://github.com/erickseis/Pokedex/edit/main/README.md "Spanish")
